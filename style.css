@@ -1,0 +1,193 @@
+* {
+  text-align: center;
+  font-family: Pretendard;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  background-color: white;
+}
+
+/* 제목 */
+h1 {
+  margin-top: 48px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  opacity: 0;
+}
+
+/* 입력창 라벨 */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: slategray;
+  opacity: 0;
+  
+}
+
+/* 입력창 */
+#input {
+  width: 300px;
+  height: 48px;
+  margin: 10px;
+  border: 2px solid #d4d4d4;
+  font-size: 24px;
+  caret-color: blue;
+  border-radius: 8px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+#input::placeholder {
+  color: slategray;
+}
+#input:focus {
+  outline: 2px solid blue;
+}
+
+/* 확인하기 버튼 */
+.btn {
+  color: white;
+  background-color: blue;
+  font-size: 14px;
+  font-weight: bold;
+  width: 300px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 16px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.btn:active {
+  background-color: rgb(0, 0, 190);
+}
+/* .btn:focus {
+  background-color: blue;
+} */
+
+/* 다시하기 버튼 */
+.btn-underline {
+  color: slategray;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 4px;
+  width: 150px;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  transition: 0.2s;
+  opacity: 0;
+}
+.btn-underline:hover {
+  color: rgb(95, 95, 95);
+}
+.btn-underline:focus {
+  color: darkgray;
+}
+
+/* 결과 */
+p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* 폼1 */
+#form1 {
+  position: relative;
+}
+
+/* 푸터 */
+/* footer 하단 고정 [S] */
+
+footer {
+  opacity: 0;
+}
+
+p.ft {
+  font-size: 16px;
+  font-weight: bold;
+  color: slategray;
+}
+
+p.ft2 {
+  color: black;
+}
+a:link {
+  color: slategray;
+  text-decoration: none;
+}
+a:visited {
+  color: slategray;
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#body-wrapper {
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+#body-content {
+  margin-top: 100px;
+  padding-bottom: 50px; /* footer의 높이 */
+}
+
+#hr1 {
+  margin: 20px;
+  border: 1px solid rgb(233, 233, 233);
+  opacity: 0;
+}
+
+footer {
+  padding-bottom: 8rem;
+  width: 100%;
+  min-height: 100%;
+  height: 50px; /* footer의 높이 */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+}
+/* footer 하단 고정 [E] */
+
+/* 지도 */
+#map {
+  display: inline-block;
+}
+
+/* 팁 */
+.tip {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  color: slategray;
+  background-color: #e6e6e9;
+  padding: 15px 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.tip p {
+  font-size: 14px;
+  width: 80%;
+  height: 16px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  display: inline-block;
+}

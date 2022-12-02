@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko"><link type="text/css" id="dark-mode" rel="stylesheet" href=""><head>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6Y0Z3MZ74P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6Y0Z3MZ74P');
+    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="only">
+
+  <!-- 오픈그래프 -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="🏫 내 강의실은 어디에?">
+  <meta property="og:title" content="🏫 강의실 찾기">
+  <meta property="og:description" content="강의실 번호로 1초만에 위치를 찾아보세요!">
+  <meta property="og:image" content="https://github.com/ssuho/mju/blob/main/image/main.png?raw=true">
+  <meta property="og:url" content="https://mjuclass.xyz">
+  <!-- 오픈그래프 끝 -->
+
+  <!-- 카카오맵 -->
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script><script charset="UTF-8" src="https://t1.daumcdn.net/kakaomapweb/place/jscss/roughmap/6af7869e/roughmapLander.js"></script>
+
+  <title>🏫 강의실 찾기</title>
+  <link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer="" src="./javascript.js"></script>
+
+</head>
+
+<body>
+  <div id="body-wrapper">
+    
+    <div id="body-content" class="visual">
+      <h1 class="fade-in" style="opacity: 1;">🏫 내 강의실은 어디에?</h1>
+      <form name="form1" method="post" id="form1" onsubmit="return false;">
+        <div id="box">
+          <label for="input" class="fade-in" style="opacity: 1;">강의실 번호</label><br>
+          <input type="text" class="fade-in" name="classnumber" id="input" placeholder="숫자만 적어주세요" style="opacity: 1;"><br>
+          <input type="text" style="display:none;">
+        </div>
+        <input type="button" value="1초만에 확인 →" class="btn fade-in" onclick="check_class()" style="opacity: 1;"><br>
+        <input type="reset" value="다시하기" class="btn-underline fade-in" onclick="re()" style="opacity: 1;"><br>
+        <p id="result">　</p>
+      </form>
+    </div>
+    <br>
+    <div class="visual2">
+      <hr id="hr1" class="fade-in" style="opacity: 1;">
+      <footer class="fade-in" style="opacity: 1;">
+        <p class="ft" style="font-size: 18px;">도움이 되셨나요?</p>
+        <a href="https://toss.me/snowfield/100" class="ft2">🐟 <span style="text-decoration: underline;">snowfield에게 100원 선물하기</span> →</a><br><br>
+      </footer>
+    </div>
+  </div>
+</body></html>
